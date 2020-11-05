@@ -13,7 +13,9 @@
 }
 
 .loading-circle {
+
   // display: none;
+
   position: relative;
   top: 0;
   bottom: 0;
@@ -27,6 +29,7 @@
   border-top: 4px solid #3498db;
   animation: spin 0.5s ease-in infinite;
 }
+
 
 @keyframes spin {
   0% {

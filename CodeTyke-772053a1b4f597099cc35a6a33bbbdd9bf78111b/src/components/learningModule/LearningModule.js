@@ -27,9 +27,13 @@ const LearningModule = ({setGameStatus}) => {
 
   const handleSubmit=()=> {
     if(currentQuestionId < quizData.totalQuestions-1){
+
       setShowLoader(true)
+
       setCurrentQuestionId(currentQuestionId+1);
+      
       // setShowLoader(false) //how to make it false not immediately? setTimeOut() somehow? 
+      
     } else {
       setCurrentQuestionId(0);
       setGameStatus({message: "Great Job! Play again.", loadIntro: true});

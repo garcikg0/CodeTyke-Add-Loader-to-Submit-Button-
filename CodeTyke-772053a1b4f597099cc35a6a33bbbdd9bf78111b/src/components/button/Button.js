@@ -7,7 +7,9 @@ const Button = (props) => {
     <>
     <div className={"submitButton"} onClick={props.handleSubmit} >
       {props.label}
+
         {props.showLoader ? <div className="loading-circle"></div> : <div></div>}
+        
     </div>
     </>
   )
